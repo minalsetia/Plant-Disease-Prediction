@@ -15,7 +15,7 @@ def translate_text(text, target_language):
     return translated.text
 
 # Specify the exact model path
-model_path = r"D:/project 7th sem/minor project/model/crop_disease_prediction_model.h5"
+model_path = r"D:/Projects/Plant disease Prediction/model/crop_disease_prediction_model.h5"
 
 # Load the pre-trained model
 if os.path.exists(model_path):
@@ -24,7 +24,7 @@ if os.path.exists(model_path):
 else:
     print(f"Model not found at path: {model_path}")
 
-class_indices_path = r"D:/project 7th sem/minor project/Dataset/class_indices.json"
+class_indices_path = r"D:/Projects/Plant disease Prediction/Dataset/class_indices.json"
 
 # Load the class indices from the JSON file
 if os.path.exists(class_indices_path):
